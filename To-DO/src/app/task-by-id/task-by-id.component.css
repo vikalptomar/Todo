@@ -1,0 +1,10 @@
+.box{
+    text-align:left;
+    display: block;
+    margin-left: 250px;
+    margin-right: 0px;
+    margin-top: 40px;
+    position:absolute;
+    width: 30%;
+    height: fit-content;
+}

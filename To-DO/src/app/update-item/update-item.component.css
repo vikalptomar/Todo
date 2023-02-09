@@ -1,0 +1,15 @@
+.bu{
+    display: block;
+    margin-left: 415px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    position:fixed;
+}
+.form-group{
+    margin-left: 200px;
+    margin-right: 0px;
+    width: 15%;
+    margin-top: 40px;
+    position: fixed;
+}

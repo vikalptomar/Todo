@@ -1,0 +1,45 @@
+.center{
+    text-align: center;
+    display: block;
+    margin-left: 408px;
+    margin-right: 0px;
+    margin-top: 85px;
+    position:absolute;
+    width: 60%;
+    border-color: #337AB7;
+    border-style: solid;
+}
+.inputs{
+    margin-left: 200px;
+    margin-right: 0px;
+    width: 15%;
+    margin-top: 40px;
+    position: fixed;
+}
+.del{
+    cursor: pointer;
+}
+.form-check-input{
+    cursor: pointer;
+}
+.filter{
+    margin-left: 100px;
+    margin-right: 0px;
+    margin-top: 50px;
+    position: fixed;
+}
+.fid{
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    position:relative;
+
+
+}
+.ftit{
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-top: 50px;
+    position:relative;
+}

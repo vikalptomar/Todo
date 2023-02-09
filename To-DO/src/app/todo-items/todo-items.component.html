@@ -1,0 +1,37 @@
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+<div class="inputs">
+  <input class="form-control" type="text" name="t" [(ngModel)]="t" (ngModelChange)="search()" placeholder="Search..">
+  <tr *ngFor="let item of list">
+      <th *ngIf="p===item.title" scope="row" class="fid" >ID={{item.id}}</th>
+      <td *ngIf="p===item.title" class="ftit" >Task={{item.title}}</td>
+  </tr>
+</div>
+
+<div class="center">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th scope="col" style="text-align: center">ID</th>
+        <th scope="col" style="text-align: center">ToDo Tasks</th>
+        <th scope="col" style="text-align: center">Done</th>
+        <th scope="col" style="text-align: center">Delete</th>
+        <th scope="col" style="text-align: center">Update</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list">
+        <th scope="row" style="text-align: center">{{item.id}}</th>
+        <td>{{item.title}}</td>
+        <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+        <td><fa-icon (click)="del(item.id)" class="del" [icon]="delicon"></fa-icon></td>
+        <td><a routerLink="/PATCH/{{item.id}}">
+            <fa-icon [icon]="updateicon" style="color:grey;"></fa-icon>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

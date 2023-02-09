@@ -1,0 +1,26 @@
+.del{
+    display: block;
+    margin-left: 205px;
+    margin-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    position:fixed;
+}
+.no{
+    display: block;
+    margin-left: 305px;
+    margin-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    position:fixed;
+}
+.data{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:200%;
+    display: block;
+    margin-left: 215px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    position:fixed;
+}

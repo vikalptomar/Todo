@@ -1,0 +1,18 @@
+.but{
+    display: block;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+}
+.ad{
+    display: block;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position:fixed;
+}
