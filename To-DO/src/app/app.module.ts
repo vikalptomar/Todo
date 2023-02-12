@@ -13,6 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UpdateItemComponent } from './update-item/update-item.component';
 import { DeleteItemComponent } from './delete-item/delete-item.component';
 import { TaskByIdComponent } from './task-by-id/task-by-id.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TaskByIdComponent } from './task-by-id/task-by-id.component';
     AddItemComponent,
     UpdateItemComponent,
     DeleteItemComponent,
-    TaskByIdComponent
+    TaskByIdComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -10,11 +10,14 @@ export class TaskByIdComponent implements OnInit {
 
   constructor(private route:ActivatedRoute,private todo:TodoService) { }
 
-  ngOnInit(): void {
-  }
+  list:any=[];
   x:any;
-  id=this.route.snapshot.params['id'];
-  tom=this.todo.getTaskById(this.id).subscribe((res)=>{
+  ngOnInit(): void {
+    this.todo.getList().subscribe((data)=>{
+      this.list=data;
+  })}
+
+  tom=this.todo.getTaskById(this.route.snapshot.params['id']).subscribe((res)=>{
     console.log(res);
     this.x=res;
   })

@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from "@angular/common/http/testing";
+import {RouterTestingModule} from '@angular/router/testing'
 
 import { TaskByIdComponent } from './task-by-id.component';
 
@@ -8,7 +10,8 @@ describe('TaskByIdComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TaskByIdComponent ]
+      declarations: [ TaskByIdComponent ],
+      imports: [RouterTestingModule, HttpClientTestingModule],
     })
     .compileComponents();
 
@@ -17,6 +20,10 @@ describe('TaskByIdComponent', () => {
     fixture.detectChanges();
   });
 
+  // it('should get item by id', () => {
+  //   const trys=fixture.nativeElement;
+  //   expect(trys.querySelector('.itemid').textContent).toContain('hi');
+  //});
   it('should create', () => {
     expect(component).toBeTruthy();
   });

@@ -3,10 +3,20 @@
 
 <div class="inputs">
   <input class="form-control" type="text" name="t" [(ngModel)]="t" (ngModelChange)="search()" placeholder="Search..">
-  <tr *ngFor="let item of list">
-      <th *ngIf="p===item.title" scope="row" class="fid" >ID={{item.id}}</th>
-      <td *ngIf="p===item.title" class="ftit" >Task={{item.title}}</td>
-  </tr>
+  <table class="ibox">
+    <thead>
+      <tr>
+        <th scope="col" style="text-align: center"></th>
+        <th scope="col" style="text-align: center"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list">
+        <th *ngIf="p===item.title" scope="row" class="fid">ID= {{item.id}}</th>
+        <td *ngIf="p===item.title" class="ftit">Task= "{{item.title}}"</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <div class="center">
@@ -28,7 +38,7 @@
         <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
         <td><fa-icon (click)="del(item.id)" class="del" [icon]="delicon"></fa-icon></td>
         <td><a routerLink="/PATCH/{{item.id}}">
-            <fa-icon [icon]="updateicon" style="color:grey;"></fa-icon>
+            <fa-icon [icon]="updateicon" style="color:#337AB7"></fa-icon>
           </a>
         </td>
       </tr>
