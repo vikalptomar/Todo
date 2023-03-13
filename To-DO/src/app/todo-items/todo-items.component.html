@@ -1,9 +1,9 @@
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-
+<!-- (ngModelChange)="search()" -->
 <div class="inputs">
-  <input class="form-control" type="text" name="t" [(ngModel)]="t" (ngModelChange)="search()" placeholder="Search..">
-  <table class="ibox">
+  <input class="form-control" type="text" name="t" [(ngModel)]="searchFilter"  placeholder="Search..">
+  <!-- <table class="ibox">
     <thead>
       <tr>
         <th scope="col" style="text-align: center"></th>
@@ -16,7 +16,7 @@
         <td *ngIf="p===item.title" class="ftit">Task= "{{item.title}}"</td>
       </tr>
     </tbody>
-  </table>
+  </table> -->
 </div>
 
 <div class="center">
@@ -32,7 +32,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of list">
+      <tr *ngFor="let item of list| filter: searchFilter">
         <th scope="row" style="text-align: center">{{item.id}}</th>
         <td>{{item.title}}</td>
         <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>

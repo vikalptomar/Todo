@@ -10,17 +10,17 @@ export class TodoItemsComponent implements OnInit {
 
   constructor(private todo_instance:TodoService) { }
   list:any=[];
-  t:any;
+  searchFilter:any;
   ngOnInit(): void {
     this.todo_instance.getList().subscribe((data)=>{
       this.list=data;
     })
   }
   p:any;
-  search(){
-    console.log(this.t); 
-    this.p=this.t;
-  }
+  // search(){
+  //   console.log(this.t); 
+  //   this.p=this.t;
+  // }
   delicon=faTrash;
   updateicon=faPen;
   del(datas:number){
